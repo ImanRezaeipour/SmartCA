@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SmartCA.Model.Employees.Employee">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACACAAAAAAACAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Employees\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartCA.Model.Employees.EmployeeRuleMessages">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees\EmployeeRuleMessages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartCA.Model.Employees.EmployeeService">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAACgAAAAAAQAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees\EmployeeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

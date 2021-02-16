@@ -1,0 +1,255 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="SmartCA.Presentation.Views.ProjectInformationView"
+	Title="Project Information"
+	Width="700" Height="700" Background="{StaticResource FormBackgroundBrush}">
+	
+	<Window.Resources>
+		<DataTemplate x:Key="projectNameAndNumber">
+			<Grid>
+			
+				<Label Margin="35,13.04,0,0" Content="Project Number:" 
+					Style="{StaticResource boldLabelStyle}"/>
+					
+				<Label Margin="195,13.04,131,0" 
+					Content="{Binding Path=CurrentEntity.Number}" 
+					x:Name="projectNumber" 
+					Style="{StaticResource baseLabelStyle}"/>
+					
+				<TextBox Margin="195,13.04,131,0" Visibility="Hidden" 
+					Text="{Binding Path=NewProjectNumber}" 
+					x:Name="newProjectNumber"/>
+					
+				<Label Margin="35,41.04,0,0" Content="Project Name:" 
+					Style="{StaticResource boldLabelStyle}"/>
+					
+				<Label Margin="195,41.04,0,0" 
+					Content="{Binding Path=CurrentEntity.Name}" 
+					x:Name="projectName" 
+					Style="{StaticResource baseLabelStyle}"/>
+					
+				<TextBox Margin="195,41.04,0,0" Visibility="Hidden" 
+					x:Name="newProjectName" 
+					Text="{Binding Path=NewProjectName}" 
+					Style="{StaticResource baseTextBoxStyle}"/>
+					
+			</Grid>
+			<DataTemplate.Triggers>
+				<DataTrigger Binding="{Binding Path=CurrentObjectState}" 
+					Value="New">
+					
+					<Setter Property="Visibility" Value="Visible" 
+						TargetName="newProjectNumber" />
+						
+					<Setter Property="Visibility" Value="Visible" 
+						TargetName="newProjectName" />
+						
+					<Setter Property="Visibility" Value="Hidden" 
+						TargetName="projectNumber" />
+						
+					<Setter Property="Visibility" Value="Hidden" 
+						TargetName="projectName" />
+						
+				</DataTrigger>
+			</DataTemplate.Triggers>
+		</DataTemplate>
+		<DataTemplate x:Key="ownerInformation">
+			<Grid>
+				<Label Margin="35,181.04,0,0" Content="Owner Name:" Style="{StaticResource boldLabelStyle}"/>
+				<TextBox Margin="195,181.15,0,0" Text="{Binding Path=CurrentEntity.Owner.Name}" Style="{StaticResource baseTextBoxStyle}"/>
+				<ComboBox Margin="195,181.15,0,0" IsSynchronizedWithCurrentItem="True" 
+					Width="200" SelectedItem="{Binding Path=CurrentEntity.Owner}"
+					ItemsSource="{Binding Path=Owners}" IsEditable="True"
+					TextSearch.TextPath="Name"
+					DisplayMemberPath="Name"
+					Style="{StaticResource baseComboBoxStyle}">
+				</ComboBox>
+				<Label Margin="35,209.04,0,0" Content="Owner Abbrev.:" Style="{StaticResource boldLabelStyle}"/>
+				<TextBox Margin="195,209.15,0,0" Text="{Binding Path=CurrentEntity.Owner.Abbreviation}" Style="{StaticResource baseTextBoxStyle}"/>
+				<Label Margin="35,237.04,0,0" Content="Owner Address:" Style="{StaticResource boldLabelStyle}"/>
+				<TextBox Margin="195,237.15,0,0" Text="{Binding Path=ProjectOwnerHeadquartersAddress.Street}" Style="{StaticResource baseTextBoxStyle}"/>
+				<Label Margin="35,265.04,0,0" Content="Owner City:" Style="{StaticResource boldLabelStyle}"/>
+				<TextBox Margin="195,265.15,0,0" Text="{Binding Path=ProjectOwnerHeadquartersAddress.City}" Style="{StaticResource baseTextBoxStyle}"/>
+				<Label Margin="35,293.04,0,0" Content="Owner State:" Style="{StaticResource boldLabelStyle}"/>
+				<TextBox Margin="195,293.15,0,0" Text="{Binding Path=ProjectOwnerHeadquartersAddress.State}" Style="{StaticResource baseTextBoxStyle}"/>
+				<Label Margin="35,321.04,0,0" Content="Owner Zip:" Style="{StaticResource boldLabelStyle}"/>
+				<TextBox Margin="195,321.15,0,0" Text="{Binding Path=ProjectOwnerHeadquartersAddress.PostalCode}" Style="{StaticResource baseTextBoxStyle}"/>
+			</Grid>
+		</DataTemplate>
+	</Window.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<TabControl Margin="80,40,64,80" IsSynchronizedWithCurrentItem="True">
+			<TabItem Header="Contact Info">
+				<Grid>
+					<ContentControl Content="{Binding}" ContentTemplate="{StaticResource projectNameAndNumber}"/>
+					<Label Margin="35,69.04,0,0" Content="Project Address:" 
+						Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,69.15,0,0" 
+						Text="{Binding Path=ProjectAddress.Street}" 
+						Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,97.04,0,0" Content="Project City:" 
+						Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,97.15,0,0" 
+						Text="{Binding Path=ProjectAddress.City}" 
+						Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,125.04,0,0" Content="Project State:" 
+						Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,125.15,0,0" 
+						Text="{Binding Path=ProjectAddress.State}" 
+						Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,153.04,0,0" Content="Project Zip:" 
+						Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,153.15,0,0" 
+						Text="{Binding Path=ProjectAddress.PostalCode}" 
+						Style="{StaticResource baseTextBoxStyle}"/>
+					<ContentControl Content="{Binding}" ContentTemplate="{StaticResource ownerInformation}"/>
+					<Label Margin="35,349.04,0,0" Content="CA Name/Title:" Style="{StaticResource boldLabelStyle}"/>
+					<ComboBox Margin="195,349.15,0,0" IsSynchronizedWithCurrentItem="True" 
+						Width="200" SelectedItem="{Binding Path=CurrentEntity.ConstructionAdministrator}"
+						ItemsSource="{Binding Path=ConstructionAdministrators}" IsEditable="True"
+						TextSearch.TextPath="FirstName"
+						Style="{StaticResource baseComboBoxStyle}">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition />
+										<ColumnDefinition />
+										<ColumnDefinition />
+										<ColumnDefinition />
+										<ColumnDefinition />
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="0" Text="{Binding Path=FirstName}"/>
+									<TextBlock Grid.Column="1" Text=" " />
+									<TextBlock Grid.Column="2" Text="{Binding Path=LastName}"/>
+									<TextBlock Grid.Column="3" Text=", " />
+									<TextBlock Grid.Column="4" Text="{Binding Path=JobTitle}" />
+								</Grid>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+					<Label Margin="35,377.04,0,0" Content="Principal-In-Charge:" Style="{StaticResource boldLabelStyle}"/>
+					<ComboBox Margin="195,377.15,0,0" IsSynchronizedWithCurrentItem="True" 
+						Width="200" SelectedItem="{Binding Path=CurrentEntity.PrincipalInCharge}"
+						ItemsSource="{Binding Path=Principals}" IsEditable="True"
+						TextSearch.TextPath="FirstName"
+						Style="{StaticResource baseComboBoxStyle}">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition />
+										<ColumnDefinition />
+										<ColumnDefinition />
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="0" Text="{Binding Path=FirstName}"/>
+									<TextBlock Grid.Column="1" Text=" " />
+									<TextBlock Grid.Column="2" Text="{Binding Path=LastName}"/>
+								</Grid>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Details">
+				<Grid>
+					<Label Margin="35,13.04,0,0" Content="Agency App. No:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,13.04,131,0" Text="{Binding Path=CurrentEntity.AgencyApplicationNumber}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,41.04,0,0" Content="Agency File. No:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,41.04,131,0" Text="{Binding Path=CurrentEntity.AgencyFileNumber}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,69.04,0,0" Content="Contract Date:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,69.04,131,0" Text="{Binding Path=CurrentEntity.ContractDate}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,97.04,0,0" Content="Contract Reason:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,97.04,131,0" Text="{Binding Path=CurrentEntity.ContractReason}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,125.04,0,0" Content="Total Square Feet:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,125.04,131,0" Text="{Binding Path=CurrentEntity.TotalSquareFeet}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,153.04,0,0" Content="Est. Start Date:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,153.04,131,0" Text="{Binding Path=CurrentEntity.EstimatedStartDate}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,181.04,0,0" Content="Est. Compl. Date:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,181.04,131,0" Text="{Binding Path=CurrentEntity.EstimatedCompletionDate}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,209.04,0,0" Content="Adj. Compl. Date:" Style="{StaticResource boldLabelStyle}"/>
+					<Label Margin="195,209.04,131,0" Content="{Binding Path=CurrentEntity.AdjustedCompletionDate}" Style="{StaticResource baseLabelStyle}"/>
+					<Label Margin="35,237.04,0,0" Content="Actual Compl. Date:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,237.04,131,0" Text="{Binding Path=CurrentEntity.ActualCompletionDate}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,265.04,0,0" Content="Orig. Const. Cost:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,265.04,131,0" Text="{Binding Path=CurrentEntity.OriginalConstructionCost}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,293.04,0,0" Content="Total CO's:" Style="{StaticResource boldLabelStyle}"/>
+					<Label Margin="195,293.04,131,0" Content="{Binding Path=CurrentEntity.TotalChangeOrdersAmount}" Style="{StaticResource baseLabelStyle}"/>
+					<Label Margin="35,321.04,0,0" Content="Adj. Const. Cost:" Style="{StaticResource boldLabelStyle}"/>
+					<Label Margin="195,321.04,131,0" Content="{Binding Path=CurrentEntity.AdjustedConstructionCost}" Style="{StaticResource baseLabelStyle}"/>
+					<Label Margin="35,349.04,0,0" Content="Total CO Days:" Style="{StaticResource boldLabelStyle}"/>
+					<Label Margin="195,349.04,131,0" Content="{Binding Path=CurrentEntity.TotalChangeOrderDays}" Style="{StaticResource baseLabelStyle}"/>
+					<Label Margin="35,377.04,0,0" Content="A &amp; E CO:" Style="{StaticResource boldLabelStyle}"/>
+					<Label Margin="195,377.04,131,0" Content="{Binding Path=CurrentEntity.AeChangeOrderAmount}" Style="{StaticResource baseLabelStyle}"/>
+					<Label Margin="35,405.04,0,0" Content="Percent Complete:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,405.04,131,0" Text="{Binding Path=CurrentEntity.PercentComplete}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,433.04,0,0" Content="Remarks:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,433.04,131,0" TextWrapping="Wrap" Text="{Binding Path=CurrentEntity.Remarks}" Style="{StaticResource baseTextBoxStyle}"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Marketing Info">
+				<Grid>
+					<Label Margin="35,13.04,0,0" Content="Market Segment:" Style="{StaticResource boldLabelStyle}"/>
+					<ComboBox Margin="195,13.04,131,0" IsSynchronizedWithCurrentItem="True" 
+						Width="200" SelectedItem="{Binding Path=CurrentEntity.Segment}"
+						ItemsSource="{Binding Path=MarketSegments}" IsEditable="True"
+						TextSearch.TextPath="Name"
+						Style="{StaticResource baseComboBoxStyle}">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition />
+										<ColumnDefinition />
+										<ColumnDefinition />
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="0" Text="{Binding Path=ParentSector.Name}"/>
+									<TextBlock Grid.Column="1" Text=" - " />
+									<TextBlock Grid.Column="2" Text="{Binding Path=Name}" />
+								</Grid>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Allowances">
+				<Grid>
+					<Label Margin="35,13.04,0,0" Content="Cont. Allowance:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,13.04,131,0" Text="{Binding Path=CurrentEntity.ContingencyAllowanceAmount}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,41.04,0,0" Content="Testing Allowance:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,41.04,131,0" Text="{Binding Path=CurrentEntity.TestingAllowanceAmount}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,69.04,0,0" Content="Utility Allowance:" Style="{StaticResource boldLabelStyle}"/>
+					<TextBox Margin="195,69.04,131,0" Text="{Binding Path=CurrentEntity.UtilityAllowanceAmount}" Style="{StaticResource baseTextBoxStyle}"/>
+					<Label Margin="35,97.04,0,0" Content="Other Allowances:" Style="{StaticResource boldLabelStyle}"/>
+					<ListView Margin="195,97.04,70,0" ItemsSource="{Binding Path=CurrentEntity.Allowances}">
+						<ListView.View>
+							<GridView>
+								<GridViewColumn Header="Allowance Name" Width="140">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBox TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}" Style="{StaticResource baseTextBoxStyle}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Allowance Value" Width="110">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBox Text="{Binding Path=Amount}" Style="{StaticResource baseTextBoxStyle}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+							</GridView>
+						</ListView.View>
+					</ListView>
+				</Grid>
+			</TabItem>
+		</TabControl>
+    <Button Margin="80,0,0,21" VerticalAlignment="Bottom" Command="{Binding Path=CancelCommand}">Cancel</Button>
+    <Button Margin="200,0,0,21" VerticalAlignment="Bottom" Command="{Binding Path=ContactsCommand}">Project Contacts</Button>
+    <Button Margin="300,0,0,21" VerticalAlignment="Bottom" Command="{Binding Path=NewCommand}">New Project</Button>
+    <Button Margin="0,0,64,21" VerticalAlignment="Bottom" HorizontalAlignment="Right" Command="{Binding Path=SaveCommand}">Save</Button>
+  </Grid>
+	
+</Window>

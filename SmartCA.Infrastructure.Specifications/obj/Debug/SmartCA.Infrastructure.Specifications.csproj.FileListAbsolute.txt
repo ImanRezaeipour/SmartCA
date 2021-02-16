@@ -1,0 +1,5 @@
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.Infrastructure.Specifications\bin\Debug\SmartCA.Infrastructure.Specifications.dll
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.Infrastructure.Specifications\bin\Debug\SmartCA.Infrastructure.Specifications.pdb
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.Infrastructure.Specifications\obj\Debug\ResolveAssemblyReference.cache
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.Infrastructure.Specifications\obj\Debug\SmartCA.Infrastructure.Specifications.dll
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.Infrastructure.Specifications\obj\Debug\SmartCA.Infrastructure.Specifications.pdb

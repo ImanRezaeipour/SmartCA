@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SmartCA">
+</Property><Property Name="Solution File" Value="E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.sln">
+</Property><Property Name="Date" Value="Tuesday, May 10, 2011">
+</Property><Property Name="Time" Value="10:34 AM">
+</Property></Properties><Event ErrorLevel="0" Project="SmartCA.Model" Source="SmartCA.Model\SmartCA.Model.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Model" Source="SmartCA.Model\SmartCA.Model.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure" Source="SmartCA.Infrastructure\SmartCA.Infrastructure.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure" Source="SmartCA.Infrastructure\SmartCA.Infrastructure.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Application" Source="SmartCA.Application\SmartCA.Application.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Application" Source="SmartCA.Application\SmartCA.Application.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.UnitTests" Source="SmartCA.UnitTests\SmartCA.UnitTests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.UnitTests" Source="SmartCA.UnitTests\SmartCA.UnitTests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Repositories" Source="SmartCA.Infrastructure.Repositories\SmartCA.Infrastructure.Repositories.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure.Repositories" Source="SmartCA.Infrastructure.Repositories\SmartCA.Infrastructure.Repositories.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Presentation" Source="SmartCA.Presentation\SmartCA.Presentation.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Presentation" Source="SmartCA.Presentation\SmartCA.Presentation.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.UI" Source="SmartCA.Infrastructure.UI\SmartCA.Infrastructure.UI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure.UI" Source="SmartCA.Infrastructure.UI\SmartCA.Infrastructure.UI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Specifications" Source="SmartCA.Infrastructure.Specifications\SmartCA.Infrastructure.Specifications.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure.Specifications" Source="SmartCA.Infrastructure.Specifications\SmartCA.Infrastructure.Specifications.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Synchronization" Source="SmartCA.Infrastructure.Synchronization\SmartCA.Infrastructure.Synchronization.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure.Synchronization" Source="SmartCA.Infrastructure.Synchronization\SmartCA.Infrastructure.Synchronization.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.DataContracts" Source="SmartCA.DataContracts\SmartCA.DataContracts.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.DataContracts" Source="SmartCA.DataContracts\SmartCA.DataContracts.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.DataContracts.Helpers" Source="SmartCA.DataContracts.Helpers\SmartCA.DataContracts.Helpers.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.DataContracts.Helpers" Source="SmartCA.DataContracts.Helpers\SmartCA.DataContracts.Helpers.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Membership" Source="SmartCA.Infrastructure.Membership\SmartCA.Infrastructure.Membership.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure.Membership" Source="SmartCA.Infrastructure.Membership\SmartCA.Infrastructure.Membership.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Membership.Providers" Source="SmartCA.Infrastructure.Membership.Providers\SmartCA.Infrastructure.Membership.Providers.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartCA.Infrastructure.Membership.Providers" Source="SmartCA.Infrastructure.Membership.Providers\SmartCA.Infrastructure.Membership.Providers.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SmartCA.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SmartCA.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartCA.Model" Source="SmartCA.Model\SmartCA.Model.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure" Source="SmartCA.Infrastructure\SmartCA.Infrastructure.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Application" Source="SmartCA.Application\SmartCA.Application.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="" Source="LocalTestRun.testrunconfig" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LocalTestRun.testrunconfig" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="3" Project="" Source="SmartCA.vsmdi" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SmartCA.vsmdi" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="0" Project="SmartCA.UnitTests" Source="SmartCA.UnitTests\SmartCA.UnitTests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Repositories" Source="SmartCA.Infrastructure.Repositories\SmartCA.Infrastructure.Repositories.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Presentation" Source="SmartCA.Presentation\SmartCA.Presentation.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.UI" Source="SmartCA.Infrastructure.UI\SmartCA.Infrastructure.UI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Specifications" Source="SmartCA.Infrastructure.Specifications\SmartCA.Infrastructure.Specifications.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Synchronization" Source="SmartCA.Infrastructure.Synchronization\SmartCA.Infrastructure.Synchronization.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.DataContracts" Source="SmartCA.DataContracts\SmartCA.DataContracts.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.DataContracts.Helpers" Source="SmartCA.DataContracts.Helpers\SmartCA.DataContracts.Helpers.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Membership" Source="SmartCA.Infrastructure.Membership\SmartCA.Infrastructure.Membership.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartCA.Infrastructure.Membership.Providers" Source="SmartCA.Infrastructure.Membership.Providers\SmartCA.Infrastructure.Membership.Providers.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="SmartCA.Presentation.Views.CopyToList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <xcdg:DataGridControl ItemsSource="{Binding}">
+		<xcdg:DataGridControl.Columns>
+			<xcdg:Column Width="50" FieldName="DeleteButton" 
+				DisplayMemberBinding="{Binding .}"> 
+				<xcdg:Column.CellContentTemplate> 
+					<DataTemplate> 
+						<Button Content="Delete" 
+							Command="{Binding 
+							RelativeSource={RelativeSource 
+							FindAncestor, AncestorType={x:Type Window}}, 
+							Path=DataContext.DeleteCopyToCommand}"> 
+							<Button.CommandParameter> 
+								<Binding Path="."/> 
+							</Button.CommandParameter> 
+						</Button> 
+					</DataTemplate> 
+				</xcdg:Column.CellContentTemplate> 
+			</xcdg:Column> 
+			<xcdg:Column FieldName="ProjectContact" Title="Name">
+				<xcdg:Column.CellContentTemplate> 
+					<DataTemplate> 
+						<ComboBox 
+							ItemsSource="{Binding 
+							RelativeSource={RelativeSource 
+							FindAncestor, AncestorType={x:Type Window}}, 
+							Path=DataContext.ToList}"
+							SelectedItem="{Binding .}"
+							IsSynchronizedWithCurrentItem="True">	
+							<ComboBox.ItemTemplate>
+								<DataTemplate>
+									<Grid>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition />
+											<ColumnDefinition />
+											<ColumnDefinition />
+										</Grid.ColumnDefinitions>
+										<TextBlock Grid.Column="0" Text="{Binding Path=Contact.FirstName}"/>
+										<TextBlock Grid.Column="1" Text=" " />
+										<TextBlock Grid.Column="2" Text="{Binding Path=Contact.LastName}"/>
+									</Grid>
+								</DataTemplate>
+							</ComboBox.ItemTemplate>			
+						</ComboBox>
+					</DataTemplate> 
+				</xcdg:Column.CellContentTemplate> 
+			</xcdg:Column>
+			<xcdg:Column FieldName="Notes" Title="Notes" Width="100" TextWrapping="Wrap"/>
+		</xcdg:DataGridControl.Columns>
+		<xcdg:DataGridControl.View>
+			<xcdg:TableView HorizontalGridLineThickness="1" 
+				VerticalGridLineThickness="1">
+				<xcdg:TableView.HorizontalGridLineBrush>
+					<SolidColorBrush Color="Orange"/>
+				</xcdg:TableView.HorizontalGridLineBrush>
+				<xcdg:TableView.VerticalGridLineBrush>
+					<SolidColorBrush Color="Orange"/>
+				</xcdg:TableView.VerticalGridLineBrush>
+				<xcdg:TableView.Footers>
+					<DataTemplate>
+						<xcdg:InsertionRow/>
+				   </DataTemplate>
+				</xcdg:TableView.Footers>
+				<xcdg:TableView.FixedHeaders>
+					<xcdg:ClearHeadersFooters/>
+					<DataTemplate>
+						<xcdg:ColumnManagerRow/>
+					</DataTemplate>
+				</xcdg:TableView.FixedHeaders>
+			</xcdg:TableView>
+		</xcdg:DataGridControl.View>
+	</xcdg:DataGridControl>
+</UserControl>

@@ -1,0 +1,146 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E786FF18-1621-43EF-9E22-7CC3594E2FA3}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		SmartCA.vsmdi = SmartCA.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Model", "SmartCA.Model\SmartCA.Model.csproj", "{047216A5-1F0E-4451-B558-A303D292A787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure", "SmartCA.Infrastructure\SmartCA.Infrastructure.csproj", "{9ECA514B-A757-4CA6-814E-F66B049913AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Application", "SmartCA.Application\SmartCA.Application.csproj", "{3B916633-1ED1-4535-A446-75B321901942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.UnitTests", "SmartCA.UnitTests\SmartCA.UnitTests.csproj", "{7947D92D-CCDA-424E-ABB9-96A00EC50D4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure.Repositories", "SmartCA.Infrastructure.Repositories\SmartCA.Infrastructure.Repositories.csproj", "{27687565-02AA-4D95-8ED8-DAF29EF3AC21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Presentation", "SmartCA.Presentation\SmartCA.Presentation.csproj", "{6BB0B9CF-28B0-4053-8CB4-7817BB77FBEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure.UI", "SmartCA.Infrastructure.UI\SmartCA.Infrastructure.UI.csproj", "{CBED97F3-00EC-495E-BCB8-A0EFEE8824DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure.Specifications", "SmartCA.Infrastructure.Specifications\SmartCA.Infrastructure.Specifications.csproj", "{53E63783-EC95-4027-B3C8-4CBA4AF47C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure.Synchronization", "SmartCA.Infrastructure.Synchronization\SmartCA.Infrastructure.Synchronization.csproj", "{227CDD76-89D2-4123-B953-B369EFE9ADF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.DataContracts", "SmartCA.DataContracts\SmartCA.DataContracts.csproj", "{48C646C7-98A4-4378-9DBA-810F608E24AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.DataContracts.Helpers", "SmartCA.DataContracts.Helpers\SmartCA.DataContracts.Helpers.csproj", "{BFC32F0F-5076-4C48-8AE3-12FF1071931D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure.Membership", "SmartCA.Infrastructure.Membership\SmartCA.Infrastructure.Membership.csproj", "{1D980E5C-B91C-4957-86BA-0C3B76C4E143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCA.Infrastructure.Membership.Providers", "SmartCA.Infrastructure.Membership.Providers\SmartCA.Infrastructure.Membership.Providers.csproj", "{068C1C71-2A8F-4605-B479-1C18F5D51973}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs03.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SmartCA.Model\\SmartCA.Model.csproj
+		SccProjectName1 = SmartCA.Model
+		SccLocalPath1 = SmartCA.Model
+		SccProjectUniqueName2 = SmartCA.Infrastructure\\SmartCA.Infrastructure.csproj
+		SccProjectName2 = SmartCA.Infrastructure
+		SccLocalPath2 = SmartCA.Infrastructure
+		SccProjectUniqueName3 = SmartCA.Application\\SmartCA.Application.csproj
+		SccProjectName3 = SmartCA.Application
+		SccLocalPath3 = SmartCA.Application
+		SccProjectUniqueName4 = SmartCA.UnitTests\\SmartCA.UnitTests.csproj
+		SccProjectName4 = SmartCA.UnitTests
+		SccLocalPath4 = SmartCA.UnitTests
+		SccProjectUniqueName5 = SmartCA.Infrastructure.Repositories\\SmartCA.Infrastructure.Repositories.csproj
+		SccProjectName5 = SmartCA.Infrastructure.Repositories
+		SccLocalPath5 = SmartCA.Infrastructure.Repositories
+		SccProjectUniqueName6 = SmartCA.Presentation\\SmartCA.Presentation.csproj
+		SccProjectName6 = SmartCA.Presentation
+		SccLocalPath6 = SmartCA.Presentation
+		SccProjectUniqueName7 = SmartCA.Infrastructure.UI\\SmartCA.Infrastructure.UI.csproj
+		SccProjectName7 = SmartCA.Infrastructure.UI
+		SccLocalPath7 = SmartCA.Infrastructure.UI
+		SccProjectUniqueName8 = SmartCA.Infrastructure.Specifications\\SmartCA.Infrastructure.Specifications.csproj
+		SccProjectName8 = SmartCA.Infrastructure.Specifications
+		SccLocalPath8 = SmartCA.Infrastructure.Specifications
+		SccProjectUniqueName9 = SmartCA.Infrastructure.Synchronization\\SmartCA.Infrastructure.Synchronization.csproj
+		SccProjectName9 = SmartCA.Infrastructure.Synchronization
+		SccLocalPath9 = SmartCA.Infrastructure.Synchronization
+		SccProjectUniqueName10 = SmartCA.DataContracts\\SmartCA.DataContracts.csproj
+		SccProjectName10 = SmartCA.DataContracts
+		SccLocalPath10 = SmartCA.DataContracts
+		SccProjectUniqueName11 = SmartCA.DataContracts.Helpers\\SmartCA.DataContracts.Helpers.csproj
+		SccProjectName11 = SmartCA.DataContracts.Helpers
+		SccLocalPath11 = SmartCA.DataContracts.Helpers
+		SccProjectUniqueName12 = SmartCA.Infrastructure.Membership\\SmartCA.Infrastructure.Membership.csproj
+		SccProjectName12 = SmartCA.Infrastructure.Membership
+		SccLocalPath12 = SmartCA.Infrastructure.Membership
+		SccProjectUniqueName13 = SmartCA.Infrastructure.Membership.Providers\\SmartCA.Infrastructure.Membership.Providers.csproj
+		SccProjectName13 = SmartCA.Infrastructure.Membership.Providers
+		SccLocalPath13 = SmartCA.Infrastructure.Membership.Providers
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SmartCA.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{047216A5-1F0E-4451-B558-A303D292A787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047216A5-1F0E-4451-B558-A303D292A787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047216A5-1F0E-4451-B558-A303D292A787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047216A5-1F0E-4451-B558-A303D292A787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECA514B-A757-4CA6-814E-F66B049913AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECA514B-A757-4CA6-814E-F66B049913AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECA514B-A757-4CA6-814E-F66B049913AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECA514B-A757-4CA6-814E-F66B049913AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B916633-1ED1-4535-A446-75B321901942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B916633-1ED1-4535-A446-75B321901942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B916633-1ED1-4535-A446-75B321901942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B916633-1ED1-4535-A446-75B321901942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7947D92D-CCDA-424E-ABB9-96A00EC50D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7947D92D-CCDA-424E-ABB9-96A00EC50D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7947D92D-CCDA-424E-ABB9-96A00EC50D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7947D92D-CCDA-424E-ABB9-96A00EC50D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27687565-02AA-4D95-8ED8-DAF29EF3AC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27687565-02AA-4D95-8ED8-DAF29EF3AC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27687565-02AA-4D95-8ED8-DAF29EF3AC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27687565-02AA-4D95-8ED8-DAF29EF3AC21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB0B9CF-28B0-4053-8CB4-7817BB77FBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB0B9CF-28B0-4053-8CB4-7817BB77FBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB0B9CF-28B0-4053-8CB4-7817BB77FBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB0B9CF-28B0-4053-8CB4-7817BB77FBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBED97F3-00EC-495E-BCB8-A0EFEE8824DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBED97F3-00EC-495E-BCB8-A0EFEE8824DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBED97F3-00EC-495E-BCB8-A0EFEE8824DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBED97F3-00EC-495E-BCB8-A0EFEE8824DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E63783-EC95-4027-B3C8-4CBA4AF47C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E63783-EC95-4027-B3C8-4CBA4AF47C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E63783-EC95-4027-B3C8-4CBA4AF47C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E63783-EC95-4027-B3C8-4CBA4AF47C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227CDD76-89D2-4123-B953-B369EFE9ADF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227CDD76-89D2-4123-B953-B369EFE9ADF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227CDD76-89D2-4123-B953-B369EFE9ADF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227CDD76-89D2-4123-B953-B369EFE9ADF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C646C7-98A4-4378-9DBA-810F608E24AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C646C7-98A4-4378-9DBA-810F608E24AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C646C7-98A4-4378-9DBA-810F608E24AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C646C7-98A4-4378-9DBA-810F608E24AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC32F0F-5076-4C48-8AE3-12FF1071931D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC32F0F-5076-4C48-8AE3-12FF1071931D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC32F0F-5076-4C48-8AE3-12FF1071931D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC32F0F-5076-4C48-8AE3-12FF1071931D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D980E5C-B91C-4957-86BA-0C3B76C4E143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D980E5C-B91C-4957-86BA-0C3B76C4E143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D980E5C-B91C-4957-86BA-0C3B76C4E143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D980E5C-B91C-4957-86BA-0C3B76C4E143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068C1C71-2A8F-4605-B479-1C18F5D51973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068C1C71-2A8F-4605-B479-1C18F5D51973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068C1C71-2A8F-4605-B479-1C18F5D51973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068C1C71-2A8F-4605-B479-1C18F5D51973}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

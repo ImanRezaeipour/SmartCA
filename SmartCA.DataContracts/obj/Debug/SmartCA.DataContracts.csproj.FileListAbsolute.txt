@@ -1,0 +1,5 @@
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.DataContracts\bin\Debug\SmartCA.DataContracts.dll
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.DataContracts\bin\Debug\SmartCA.DataContracts.pdb
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.DataContracts\obj\Debug\SmartCA.DataContracts.dll
+E:\Farhad Public\Researches\SampleProjects\DDD Problem-Design-Solution\SmartCA\SmartCA.DataContracts\obj\Debug\SmartCA.DataContracts.pdb
